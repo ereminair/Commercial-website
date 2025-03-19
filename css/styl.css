@@ -1,0 +1,139 @@
+body
+{
+    background-color: rgb(244, 251, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    font-size: 20px;
+    margin: 0;
+}
+.title_r
+{
+    color: rgb(18, 24, 48);
+    font-size: 30px;
+    text-align: center;
+}
+.title
+{
+    color: rgb(18, 24, 48);
+    font-size: 25px;
+}
+.card
+{
+    width: 300px;
+    margin: 30px 15px;
+    padding: 20px;
+
+    background-color: #fff;
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 10px;
+}
+.card-photo
+{
+    display: block;
+    width: 200px;
+	height: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.card-title
+{
+    font-size: 22px;
+    text-align: center;
+}
+.card-text
+{
+    font-size: 18px;
+    text-align: center;
+}
+.card-subtitle
+{
+    font-size: 18px;
+}
+.card-list
+{
+    padding-left: 0;
+    list-style-position: inside;
+    font-size: 18px;
+}
+aside
+{
+    float: left;
+}
+.container {
+    background-color: rgb(244, 251, 255);
+    width: 100%;
+    max-width: 950px; 
+    padding: 15px;
+    margin: 0 auto;
+    content : "";
+    display: table;
+    clear: both;
+}
+.container: after {
+    background-color: rgb(244, 251, 255);
+    width: 100%;
+    max-width: 950px; 
+    padding: 15px;
+    margin: 0 auto;
+    content : "";
+    display: table;
+    clear: both;
+}
+.header
+{
+    background-color: rgb(200, 221, 237);
+    width: 100%;
+    max-height: 100px;
+}
+.header__inner
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    border-bottom: 1px solid #000000;
+    
+}
+.nav
+{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    color: #271f44;
+   
+}
+.nav__link
+{
+    margin-left: 50px;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .1s;
+    linear;
+    color: #2a343c;
+}
+.nav__link:last-child
+{
+    margin-right: 50px;
+}
+.nav__link:hover
+{
+    opacity: 1; 
+}
+.example-1 {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    outline: 2px dashed rgb(179, 202, 227);
+}
+.example-1-item {
+    width: 100px;
+    background: #ffffff;
+}
+.ramka {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.ramka-item {
+    width: 100px;
+    background: #ffffff;
+}

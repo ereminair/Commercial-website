@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+body{
+	font-family: 'Arimo', sans-serif;
+}
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+ 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #000;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+
+.hhih
+			{
+			color: #9097A2;
+			}
+			.main
+			{
+				background-color: FFFFFF;
+				width: 90%;
+				text-align: left;
+				max-width: 200px; 
+				padding: 10px;
+				margin: 0px ;
+			}
+			
+			
+.rectangle {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rectangle a {
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: #D3D4DA;
+color: #000;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.rectangle a:hover {background: #DCDDE1;}       
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle a:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #9097A2;
+}
+
+
+.container {
+				background-color: FFFFFF;
+				width: 100%;
+				max-width: 1024px; 
+				padding: 15px;
+				margin: 0 auto ;
+			}
+			aside
+            {
+                float: left;
+            }
+			
+			[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #9097A2; /* Серый цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
+   
+   
+   
+   
+   
+   
+   .list1b {
+    margin: 20px 0 0;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}
+.list1b li {
+    border: 2px solid #DDDDDD;
+    background: #FAFAFA;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 16px 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.list1b li:hover {
+    z-index: 1;
+    border: 2px solid #d3d4da;
+}
+.list1b li:before {
+    border: 2px solid #d3d4da;/*светло-серый*/
+    position: absolute;
+    top: -14px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #9097A2;
+    background: #F7FAFD;
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.list1b li:hover:before {
+    border: 2px solid #9097A2;
+    background: #9097A2;/*темно-серый*/
+    color: #FFF;
+    -webkit-transform: translate(-12px, 0);
+    -ms-transform: translate(-12px, 0);
+    -o-transform: translate(-12px, 0);
+    transform: translate(-12px, 0);
+}
+.list1b li:after {
+    content: "";
+    position: absolute;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: width;
+    transition-property: width;
+    z-index: -1;
+    background: #F5F5F5;/*фон ячейки*/
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.list1b li:hover:after {
+    width: 100%;
+}
+
+
+
+/*список(галочки)*/
+.list6b {
+    padding:0;
+    list-style: none;
+}
+.list6b li{
+    padding:6px;
+}
+.list6b li:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: #d3d4da;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+.list6b li:hover:before {
+    color: #9097A2;
+    content: "\2714";
+}  
